@@ -5,7 +5,9 @@ import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 
 function Signup(props) {
+
     const [formState, setFormState] = useState({ email: '', password: '', username: ''});
+
     const [addUser] = useMutation(ADD_USER);
 
     const handleFormSubmit = async (e) => {
@@ -36,6 +38,7 @@ function Signup(props) {
             <h2>Signup</h2>
             <form onSubmit={handleFormSubmit}>
                 <div className = "flex-row space-between my-2">
+
                     <label htmlFor = "userName">User Name:</label>
                     <input
                       placeholder = "User Name"
