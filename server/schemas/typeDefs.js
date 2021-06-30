@@ -5,6 +5,7 @@ const typeDefs = gql`
     _id: ID
     userName: String
     email: String
+    password: String
     coins: [Coin]
   }
 
@@ -29,7 +30,7 @@ const typeDefs = gql`
     addUser(userName: String!, email: String!, password: String!): Auth
     addCoin(coinId: ID!): User
     removeUser(userId: ID!): User
-    removeCoin(userId: ID!): User
+    removeCoin(userId: ID!, coin: String!): User
   }
 `;
 
