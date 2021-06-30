@@ -1,10 +1,10 @@
 import React from 'react';
-import Signup from "../components"
+import Navbar from "../components/navbar/index.js"
 
 const Home = () => {
     return (
         <div className = "container">
-            < />
+            <Navbar />
 
         </div>
     )
