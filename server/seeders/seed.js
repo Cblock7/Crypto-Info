@@ -11,7 +11,7 @@ db.once("open", async () => {
     await User.create(userSeeds);
     await Coin.create(coinSeeds);
 
-    console.log("seeding complete!");
+    console.log("Crypto-Info seeding complete!");
     process.exit(0);
   } catch (err) {
     throw err;
