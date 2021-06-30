@@ -1,11 +1,11 @@
 [
   {
-    "coinName": "Bitcoin"
+    "name": "Bitcoin"
   },
   {
-    "coinName": "Litecoin"
+    "name": "Litecoin"
   },
   {
-    "coinName": "Dogecoin"
+    "name": "Dogecoin"
   }
 ]
