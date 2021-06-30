@@ -5,7 +5,7 @@ const typeDefs = gql`
     _id: ID
     userName: String
     email: String
-    savedCoins: [Coin]
+    coins: [Coin]
   }
 
   type Coin {
@@ -16,6 +16,7 @@ const typeDefs = gql`
   type Query {
     users: [User]!
     user(userId: ID!): User
+    coins: [Coin]
   }
 
   type Auth {

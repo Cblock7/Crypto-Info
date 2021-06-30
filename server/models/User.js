@@ -1,5 +1,4 @@
 const { Schema, model } = require("mongoose");
-const coinSchema = require("./Coin");
 
 const userSchema = new Schema({
   userName: {
@@ -19,7 +18,12 @@ const userSchema = new Schema({
     required: true,
   },
 
-  // savedCoins: [coinSchema],
+  coins: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Coin",
+    },
+  ],
 });
 
 // userSchema.pre("save", async function (next) {
