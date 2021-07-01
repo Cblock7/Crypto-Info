@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import React, { useState, useEffect } from 'react';
 import search from '../utils/API';
+import API from '../utils/API';
 
 class CoinDisplay extends Component {
     // const [] = useState();
@@ -14,7 +15,7 @@ class CoinDisplay extends Component {
     }
 
     searchCoin =(query) => {
-        search(query)
+        API.search(query)
         .then((res) => this.setState({ results: res.data}))
         .catch((err) => console.log(err));
     };
@@ -22,7 +23,10 @@ class CoinDisplay extends Component {
     render() {
         return (
             <div>
+                <Card>
 
+
+                </Card>
 
                 <h3>Coins are still loading!</h3>
             </div>

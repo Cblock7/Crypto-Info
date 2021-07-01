@@ -7,8 +7,7 @@ import { ADD_USER } from '../utils/mutations';
 function Signup(props) {
 
     const [formState, setFormState] = useState({ email: '', password: '', username: ''});
-
-    const [addUser] = useMutation(ADD_USER);
+    const [addUser, {error, data}] = useMutation(ADD_USER);
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
@@ -69,7 +68,7 @@ function Signup(props) {
                     />
                 </div>
                 <div className = "flex-row flex-end">
-                    <button type = "submit">Submit</button>
+                    <button className = "btn btn-danger" type = "submit">Submit</button>
                 </div>
             </form>
         </div>
