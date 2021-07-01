@@ -8,17 +8,17 @@ function Navbar() {
       <nav id="navbar">
         <ul>
           <li>
-            <Link to="/" exact className="navItem">
+            <Link to="/Dashboard" exact className="navItem">
               Dashboard
             </Link>
           </li>
           <li>
-            <Link to="/User" exact className="navItem">
+            <Link to="/MyCryptos" exact className="navItem">
               My Cryptos
             </Link>
           </li>
           <li>
-            <Link to="/Resources" exact className="navItem">
+            <Link to="/TradeCrypto" exact className="navItem">
               Trade Crypto
             </Link>
           </li>
