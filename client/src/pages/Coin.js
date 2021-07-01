@@ -1,3 +1,4 @@
+
 import React from "react";
 
 function Coin() {
@@ -5,3 +6,4 @@ function Coin() {
 }
 
 export default Coin;
+
