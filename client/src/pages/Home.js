@@ -1,11 +1,8 @@
-import React from 'react';
-import Signup from "../components"
+import React from "react";
+// import Signup from "../components";
 
 const Home = () => {
-    return (
-        <div className = "container">
-            < />
+  return <div className="container"></div>;
+};
 
-        </div>
-    )
-}
+export default Home;
