@@ -1,3 +1,4 @@
+
 // Axios is a popular NPM package used for preforming API requests
 import axios from 'axios';
 
@@ -16,3 +17,4 @@ export default topTen;
 
 // SEARCH IN API
 // bitcoin,BTC,ethereum,ETH,litecoin,LTC,cardano,ADA,dogecoin,DOGE,filecoin,FIL,binance,BNB,tether,USDT,ripple,XRP
+
