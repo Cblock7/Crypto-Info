@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+}
+
+#resourceTitle {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+#siteLinks {
+  margin-left: 200px;
+}
+
+.siteLinkItem {
+  display: flex;
+  font-size: 24px;
+}
+
+img {
+  display: block;
+  height: 400px;
+  width: 700px;
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
