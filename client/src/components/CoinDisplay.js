@@ -1,37 +1,41 @@
-import React, { Component} from 'react';
-import React, { useState, useEffect } from 'react';
-import search from '../utils/API';
-import API from '../utils/API';
+// import React, { Component } from "react";
+import React, { useState, useEffect, Component } from "react";
+import topTen from "../utils/API";
+import Card from "./Card";
+// import API from "../utils/API";
 
-class CoinDisplay extends Component {
-    // const [] = useState();
-    useState = {
-        search: '',
-        results: [],
-    };
+const CoinDisplay = function() {
+    const [coinlist, setCoinList] = useState({ results: [] });
+//   useState = {
+//     topTen: "",
+//     results: [],
+//   };
 
-    componentDidMount() {
-        this.searchCoin('');
-    }
+  useEffect(() => {
+    searchCoin("");
+  }, [])
 
-    searchCoin =(query) => {
-        API.search(query)
-        .then((res) => this.setState({ results: res.data}))
-        .catch((err) => console.log(err));
-    };
+  const searchCoin = (props) => {
+    topTen()
+      .then((res) => {
+          
+        // console.log(res.data)
+        
+        setCoinList({ results: res.data })}) 
+      .catch((err) => console.log(err));
+    console.log(props);
+  };
 
-    render() {
-        return (
-            <div>
-                <Card>
+  
+    return (
+      <div>
+        {/* <Card></Card> */}
+        <h3>Coins are still loading!</h3>
+        <Card results={coinlist.results} />
 
-
-                </Card>
-
-                <h3>Coins are still loading!</h3>
-            </div>
-        )
-    }
+      </div>
+    );
+  
 }
 
 export default CoinDisplay;
