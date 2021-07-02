@@ -1,12 +1,13 @@
-import React, { Component } from "react";
-import React, { useState, useEffect } from "react";
+// import React, { Component } from "react";
+import React, { useState, useEffect, Component } from "react";
 import topTen from "../utils/API";
+import Card from "./Card";
 // import API from "../utils/API";
 
 class CoinDisplay extends Component {
-  // const [] = useState();
+  //   const [] = useState();
   useState = {
-    search: "",
+    topTen: "",
     results: [],
   };
 
@@ -18,15 +19,15 @@ class CoinDisplay extends Component {
     topTen()
       .then((res) => this.setState({ results: res.data.data }))
       .catch((err) => console.log(err));
-    console.log(res.data.data);
+    // console.log(res.data.data);
   };
 
   render() {
     return (
       <div>
-        <Card></Card>
-
+        {/* <Card></Card> */}
         <h3>Coins are still loading!</h3>
+        <Card results={this.state.results} />
       </div>
     );
   }
