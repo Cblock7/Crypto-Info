@@ -11,17 +11,16 @@ function Login(props) {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+
     try {
-      const mutationResponse = await login({
-        variables: {
-          userName: formState.userName,
-          password: formState.password,
-        },
+      const { data } = await login({
+        variables: { ...formState },
       });
-      const token = mutationResponse.data.login.token;
-      Auth.login(token);
-    } catch (e) {
-      console.log(e);
+      console.log(data);
+
+      Auth.login(data.login.token);
+    } catch {
+      console.log("Error!");
     }
   };
 
@@ -32,11 +31,6 @@ function Login(props) {
       [name]: value,
     });
   };
-
-
-function Login() {
-  //set state
-
 
   return (
     <>

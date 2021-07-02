@@ -17,7 +17,7 @@ function Signup(props) {
       variables: {
         email: formState.email,
         password: formState.password,
-        username: formState.username,
+        userName: formState.userName,
       },
     });
     const token = mutationResponse.data.addUser.token;
