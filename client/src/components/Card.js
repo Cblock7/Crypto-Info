@@ -5,11 +5,13 @@ function Card(props) {
     <ul className="list-group">
       {props.results.map((result) => (
         <li className="list-group-item" key={result.id}>
-          {/* <img
-            alt={result.title}
+            {result.name}
+            {result.current_price}
+          <img
+            alt={result.name}
             className="img-fluid"
-            src={result.images.original.url}
-          /> */}
+            src={result.image}
+          />
         </li>
       ))}
     </ul>
