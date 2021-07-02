@@ -22,7 +22,13 @@ function Navbar() {
               Trade Crypto
             </Link>
           </li>
+          <li>
+            <Link to="/" exact className="navItem">
+              Logout
+            </Link>
+          </li>
         </ul>
+        <h1 id="siteHeader">Crypto-Info</h1>
       </nav>
     </>
   );

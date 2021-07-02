@@ -7,8 +7,12 @@ import Dashboard from "./pages/Home";
 import Resources from "./pages/Resources";
 import MyCryptos from "./pages/Coin";
 import Signup from "./pages/Signup";
+
 import CoinDisplay from "./components/CoinDisplay";
 import User from "./pages/User";
+
+import Welcome from "./components/Welcome";
+
 
 const client = new ApolloClient({
   uri: "/graphql",
@@ -23,11 +27,14 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Navbar />
+              <Welcome />
               <Login />
             </Route>
             <Route exact path="/Dashboard">
               <Navbar />
+
               <CoinDisplay />
+
             </Route>
             <Route exact path="/MyCryptos">
               <Navbar />

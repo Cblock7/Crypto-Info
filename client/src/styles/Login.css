@@ -21,6 +21,11 @@ form {
   background-color: white;
 }
 
+#loginHeader {
+  font-size: 32px;
+  color: #1877f2;
+}
+
 #login-btn {
   display: flex;
   margin-top: 10px;
