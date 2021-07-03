@@ -3,6 +3,20 @@ import "../styles/Login.css";
 import { Link } from "react-router-dom";
 
 function Login() {
+
+  // set up controlled inputs for login form
+  // setup state 
+  // validate true or false
+  // import mutation LOGIN - execute useMutation and passing into hook actual query
+  // useMutation hook from Apollo/Client
+  // write function to hanlde form submission
+  // function for handleChange
+  // clear values
+  // import auth from utils/auth.js - call auth.login method
+
+
+
+
   return (
     <>
       <section>
