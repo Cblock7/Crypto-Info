@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar {
+  padding: 1.5%;
+  background-image: linear-gradient(black, #2f4f4f);
+  color: white;
+  height: 51px;
+}
+
+ul {
+  float: right;
+}
+
+li {
+  display: inline;
+  margin: 20px;
+  font-size: 150%;
+}
+
+.navItem {
+  color: white;
+  text-decoration: none;
+}

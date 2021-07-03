@@ -1,11 +1,10 @@
-import React from 'react';
-import Navbar from "../components/navbar/index.js"
+
+import React from "react";
+// import Signup from "../components";
 
 const Home = () => {
-    return (
-        <div className = "container">
-            <Navbar />
+  return <div className="container"></div>;
+};
 
-        </div>
-    )
-}
+
+export default Home;
