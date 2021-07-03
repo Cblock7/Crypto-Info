@@ -8,21 +8,27 @@ function Navbar() {
       <nav id="navbar">
         <ul>
           <li>
-            <Link to="/Dashboard" exact className="navItem">
+            <Link to="/Dashboard" className="navItem">
               Dashboard
             </Link>
           </li>
           <li>
-            <Link to="/MyCryptos" exact className="navItem">
+            <Link to="/MyCryptos" className="navItem">
               My Cryptos
             </Link>
           </li>
           <li>
-            <Link to="/TradeCrypto" exact className="navItem">
+            <Link to="/TradeCrypto" className="navItem">
               Trade Crypto
             </Link>
           </li>
+          <li>
+            <Link to="/" exact className="navItem">
+              Logout
+            </Link>
+          </li>
         </ul>
+        <h1 id="siteHeader">Crypto-Info</h1>
       </nav>
     </>
   );
