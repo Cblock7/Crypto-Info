@@ -8,6 +8,7 @@ import Resources from "./pages/Resources";
 import MyCryptos from "./pages/Coin";
 import Signup from "./pages/Signup";
 
+
 import CoinDisplay from "./components/CoinDisplay";
 import User from "./pages/User";
 
