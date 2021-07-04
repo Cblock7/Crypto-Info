@@ -18,9 +18,9 @@ import AddToFavorites from "./AddFavorite";
           <div className="card-body">
             <h5 className="card-title">{result.name}</h5>
             <p className="card-text"> $ {result.current_price}</p>
-            <a href="#" className="btn btn-primary" onSubmit={AddToFavorites}>
+            <button className="btn btn-primary" onSubmit={AddToFavorites}>
               Add to Favorites
-            </a>
+            </button>
           </div>
         </li>
       ))}
