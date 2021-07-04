@@ -1,0 +1,9 @@
+#cardList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#card {
+  height: 500px;
+  width: 300px;
+}

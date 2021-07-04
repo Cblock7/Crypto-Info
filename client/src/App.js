@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import React, { useSate } from "react";
 import "./styles/App.css";
 import Login from "./pages/Login.js";
 import Navbar from "./components/Navbar";
@@ -8,12 +9,10 @@ import Resources from "./pages/Resources";
 import MyCryptos from "./pages/Coin";
 import Signup from "./pages/Signup";
 
-
 import CoinDisplay from "./components/CoinDisplay";
 import User from "./pages/User";
 
 import Welcome from "./components/Welcome";
-
 
 const client = new ApolloClient({
   uri: "/graphql",
@@ -33,9 +32,7 @@ function App() {
             </Route>
             <Route exact path="/Dashboard">
               <Navbar />
-
               <CoinDisplay />
-
             </Route>
             <Route exact path="/MyCryptos">
               <Navbar />
