@@ -24,7 +24,12 @@ export const ADD_USER = gql`
 
 export const ADD_COIN = gql`
   mutation addCoin($name: String!) {
-    addCoin(name: $name)
+    addCoin(coin: $coin) {
+      coin {
+        _id
+        name
+      }
+    }
   }
 `;
 
