@@ -24,26 +24,20 @@ function App() {
     <ApolloProvider client={client}>
       <div className="App">
         <BrowserRouter>
+          <Navbar />
           <Switch>
             <Route exact path="/">
-              <Navbar />
               <Welcome />
-              <Login />
-            </Route>
-            <Route exact path="/Dashboard">
-              <Navbar />
               <CoinDisplay />
             </Route>
+            <Route exact path="/Login" component={Login}></Route>
             <Route exact path="/MyCryptos">
-              <Navbar />
               <MyCryptos />
             </Route>
             <Route exact path="/TradeCrypto">
-              <Navbar />
               <Resources />
             </Route>
             <Route exact path="/Signup">
-              <Navbar />
               <Signup />
             </Route>
           </Switch>

@@ -8,7 +8,7 @@ function Navbar() {
       <nav id="navbar">
         <ul>
           <li>
-            <Link to="/Dashboard" className="navItem">
+            <Link to="/" className="navItem">
               Dashboard
             </Link>
           </li>
@@ -23,7 +23,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/" exact className="navItem">
+            <Link to="/Login" exact className="navItem">
               Logout
             </Link>
           </li>

@@ -7,9 +7,12 @@ import Auth from "../utils/auth";
 
 function Login(props) {
   const [formState, setFormState] = useState({ userName: "", password: "" });
+
   const [login, { error }] = useMutation(LOGIN);
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+
     try {
       const { data } = await login({
         variables: { ...formState },
@@ -20,6 +23,7 @@ function Login(props) {
       console.log("Error!");
     }
   };
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormState({
@@ -27,6 +31,7 @@ function Login(props) {
       [name]: value,
     });
   };
+
   return (
     <>
       <section>
@@ -37,8 +42,8 @@ function Login(props) {
               name="userName"
               type="userName"
               id="userName"
-              onChange={handleChange}
               placeholder=" Username"
+              onChange={handleChange}
             />
             <input
               placeholder=" Password"
