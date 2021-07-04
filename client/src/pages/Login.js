@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
+
 function Login(props) {
   const [formState, setFormState] = useState({ userName: "", password: "" });
   const [login, { error }] = useMutation(LOGIN);
@@ -56,7 +57,12 @@ function Login(props) {
             {/* <Link to="/Dashboard" exact className="navItem" id="login-btn">
               Login
             </Link> */}
-            <button type="submit" className="navItem" id="login-btn">
+            <button
+              href="/Dashboard"
+              type="submit"
+              className="navItem"
+              id="login-btn"
+            >
               Login
             </button>
           </div>
