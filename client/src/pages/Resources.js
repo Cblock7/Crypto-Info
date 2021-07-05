@@ -15,7 +15,7 @@ import desc10 from "../assets/images/10.png";
 
 function Resources() {
   return (
-    <div>
+    <div id="resources">
       <h2 id="resourceTitle">
         Good Applications for Starting Your Crypto Investment Journey{" "}
       </h2>

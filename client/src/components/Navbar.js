@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
 import Auth from "../utils/auth";
-
 function Navbar() {
   if (Auth.loggedIn()) {
     return (
@@ -10,13 +9,8 @@ function Navbar() {
         <nav id="navbar">
           <ul>
             <li>
-              <Link to="/" className="navItem">
+              <Link to="/Dashboard" className="navItem">
                 Dashboard
-              </Link>
-            </li>
-            <li>
-              <Link to="/MyCryptos" className="navItem">
-                My Cryptos
               </Link>
             </li>
             <li>
@@ -40,22 +34,12 @@ function Navbar() {
         <nav id="navbar">
           <ul>
             <li>
-              <Link to="/" className="navItem">
-                Dashboard
-              </Link>
-            </li>
-            <li>
-              <Link to="/MyCryptos" className="navItem">
-                My Cryptos
-              </Link>
-            </li>
-            <li>
               <Link to="/TradeCrypto" className="navItem">
                 Trade Crypto
               </Link>
             </li>
             <li>
-              <Link to="/Login" exact className="navItem">
+              <Link to="/" exact className="navItem">
                 Login
               </Link>
             </li>
@@ -66,5 +50,4 @@ function Navbar() {
     );
   }
 }
-
 export default Navbar;
