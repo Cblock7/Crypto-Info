@@ -1,0 +1,16 @@
+label {
+  color: white;
+}
+
+h2 {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+button {
+  background-color: grey;
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+}

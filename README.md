@@ -21,6 +21,8 @@ Please see node package for list of required dependencies.
 
 ## Usage
 
+App Image:
+![An image of the application](client/src/assets/images/Crypto-Info-1.png)
 Heroku Link: https://info-crypto.herokuapp.com/
 
 ## Contributing
@@ -46,3 +48,7 @@ Please reach out to us with any questions:
 ## https://github.com/DaneEnright
 
 ## https://github.com/LHWOOD
+
+## Acknowledgements
+
+Source for images on trade cryptos page: https://thecollegeinvestor.com/21245/top-10-bitcoin-crypto-investing-sites/

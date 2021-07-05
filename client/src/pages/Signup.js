@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
+import "../styles/Signup.css";
 
 function Signup(props) {
   const [formState, setFormState] = useState({
@@ -33,8 +34,6 @@ function Signup(props) {
 
   return (
     <div className="container my-1">
-      <Link to="/">Go to Login</Link>
-
       <h2>Signup</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
@@ -58,7 +57,7 @@ function Signup(props) {
           />
         </div>
         <div className="flex-row space-between my-2">
-          <lable htmlFor="password">Password:</lable>
+          <label htmlFor="password">Password:</label>
           <input
             placeholder="********"
             name="password"
@@ -67,7 +66,7 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="flex-row flex-end">
+        <div className="flex-row flex-end align-self-center">
           <button type="submit">Submit</button>
         </div>
       </form>
