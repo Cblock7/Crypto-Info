@@ -17,7 +17,7 @@
   padding: 1.5%;
   background-image: linear-gradient(black, #2f4f4f);
   color: white;
-  height: 51px;
+  height: 55px;
 }
 
 ul {
@@ -28,6 +28,7 @@ li {
   display: inline;
   margin: 20px;
   font-size: 150%;
+  text-decoration: none;
 }
 
 .navItem {
