@@ -28,9 +28,11 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Welcome />
+              <Login />
+            </Route>
+            <Route exact path="/Dashboard">
               <CoinDisplay />
             </Route>
-            <Route exact path="/Login" component={Login}></Route>
             <Route exact path="/MyCryptos">
               <MyCryptos />
             </Route>
