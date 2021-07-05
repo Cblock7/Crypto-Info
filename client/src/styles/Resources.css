@@ -2,10 +2,18 @@ body {
   background-color: white;
 }
 
+#resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
 #resourceTitle {
   display: flex;
-  margin-top: 100px;
   justify-content: center;
+  margin-top: 100px;
+  color: white;
 }
 
 #siteLinks {
@@ -22,6 +30,9 @@ img {
   height: 400px;
   width: 700px;
   margin-top: 50px;
+  border-radius: 10px;
+  opacity: 0.9;
+  box-shadow: 7px 7px 45px white;
 }
 
 a {
